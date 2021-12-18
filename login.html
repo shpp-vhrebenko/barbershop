@@ -10,28 +10,27 @@
   </head>
   <body>
     <main>
-      <section>
-        <h2>Личный кабинет</h2>
-        <p>Введите свой логин и пароль</p>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <p>
-            <label for="user-login">Логин</label>
-            <input id="user-login" type="email" name="login" placeholder="email@example.com">
-          </p>
-          <p>
-            <label for="user-password">Пароль</label>
-            <input id="user-password" type="password" name="password" placeholder="...........">
-          </p>
-          <p>
-            <label>
-              <input type="checkbox" name="remember">
-              Запомнить меня 
+      <section class="modal modal-login modal-login-page">
+        <h2>Личный кабинет</h2>        
+      <p class="modal-description">Введите свой логин и пароль</p>
+      <form class="login-form" action="https://postman-echo.com/post" method="post">
+        <p>
+          <label class="visually-hidden" for="user-login"></label>
+          <input class="login-icon-user" type="text" id="user-login" name="login" placeholder="email@example.com">
+        </p>
+        <p>
+          <label class="visually-hidden" for="user-password">Пароль</label>
+          <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="...........">
+        </p>
+        <p class="login-help">
+          <label class="login-checkbox">
+            <input type="checkbox" name="remember" class="visually-hidden">
+            <span class="checkbox-indicator"></span>
+            Запомнить меня 
           </label>
-            <a href="">Я забыл пароль!</a>  
-          </p>  
-          <button type="submit">Войти</button>
-        </form>  
-        <button type="button">Закрыть</button>
+          <a class="restore" href="#">Я забыл пароль!</a>
+        </p>
+        <button class="button">Вход</button>        
       </section>
     </main>
   </body>

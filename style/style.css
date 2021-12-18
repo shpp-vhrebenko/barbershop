@@ -628,6 +628,10 @@ main {
   padding: 50px 80px;
 }
 
+.modal-login.modal-login-page {
+  display: block;
+}
+
 .modal h2 {
   margin-bottom: 20px;
 
@@ -761,6 +765,10 @@ main {
   margin-top: -280px;
   overflow: hidden;
   border: 7px solid var(--white);
+}
+
+.modal-map-page {
+  display: block;
 }
 
 /* INNER PAGE */
