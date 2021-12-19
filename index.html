@@ -97,7 +97,7 @@
             ПН—ПТ: С 10:00 ДО 22:00 <br>
             СБ—ВС: С 10:00 ДО 19:00 <br>
           </p>
-          <a class="button" href="map.html">Как проехать</a>
+          <a class="button map-link" href="map.html">Как проехать</a>
           <a class="button" href="contacts.html">Обратная связь</a>
         </section>
         <section class="appointment">
@@ -159,7 +159,7 @@
     <section class="modal modal-login">
       <h2>Личный кабинет</h2>
       <p class="modal-description">Введите свой логин и пароль</p>
-      <form class="login-form" action="#" method="post">
+      <form class="login-form" action="https://postman-echo.com/post" method="post">
         <p>
           <label class="visually-hidden" for="user-login"></label>
           <input class="login-icon-user" type="text" id="user-login" name="login" placeholder="email@example.com">
@@ -185,9 +185,8 @@
       <div>
         <img src="./img/map.jpg" width="780" height="560" alt="Офис компании по адресу ул.Толстого 18/8, Санкт-Петербург">
       </div>
-      <button class="modal-close" type="button">
-        <span class="visually-hidden">Закрыть</span>
-      </button>
+      <button class="modal-close" type="button" aria-label="Закрыть"></button>
     </section>
+    <script src="./js/popup.js"></script>
   </body>
 </html>
